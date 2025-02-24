@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tp HTML</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documento de HTML</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            
+            footer{
+                background-color: black;
+                color: aliceblue;
+                text-align: center;
+                padding: 8px;
+            }
+            table{
+                width: 25%;
+                border-collapse:separate;
+            }
+            th,
+            td {
+                border: 1px solid black;
+                padding: 6px;
+                text-align: center;
+            }
+            ul{
+                list-style: disc;
+            }
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Encabezado Principal</h1>
+        <h4>Enlaces internos</h4>
+            <ul>
+                <li><a href="#estructura_html">Ir a Estructura</a></li>   
+                <li><a href="#encabezados_html">Ir a Encabezados</a></li>
+                <li><a href="#divisiones_html">Ir a divisiones</a></li>
+                <li><a href="#enlaces_html">Ir a enlaces</a></li>
+                <li><a href="#multimedia_html">Ir a multimedia </a></li>
+                <li><a href="#tablas_html">Ir a tablas</a></li>
+                <li><a href="#formulario_html">Ir a formularios</a></li>
+            </ul>   
+    </header>
+    <main>
+        <section>
+            <h2 id="estructura_html">1. Estructura básica del documento HTML</h2>
+            <p>Este documento HTML, tiene una estructura básica que incluye la declaracion de DOCTYPE
+            , etiquetas de metadatos y un título.</p>
+        </section>
+        <section>
+            <h2 id="encabezados_html">2. Encabezados y Propiedades del texto</h2>
+            <h1>Este es un encabezado h1</h1>
+            <h2>Este es un encabezado h2</h2>
+            <h3>Este es un encabezado h3</h3>
+            <h4><b>es un texto en negrita</b></h4>
+            <h5><i>es un texto en cursiva</i></h5>
+            <h6><u>es un texto subrayado</u></h6>
+        </section>
+        <section>
+            <h2 id="divisiones_html">3. Divisiones y agrupaciones de contenido</h2>
+            <article>
+                <h3>Seccion 1</h3>
+                <p>Contenido de la primera seccion agrupada en un div.</p>
+            </article>
+            <article>
+                <h3>Seccion 2</h3>
+                <p>Contenido de la segunda seccion agrupada en un div.</p>
+            </article>
+        </section>
+       <section>
+        <div>
+            <h2 id="enlaces_html">4. Enlaces y listas</h2>
+            <p>Visita nuestro <a href="https://www.youtube.com/watch?v=NSuXmFOPn0Q&list=PL6dM-wegAFwiKysmU6xJuNO4MV6-dNO-f">sitio web</a> 
+            para mas informacion</p>
+            
+        </div>
+        <div> 
+            <h4>Lista ordenada</h4>
+            <ol>
+                <li>Primer item lista ordenada. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Id, eligendi? Reiciendis earum ipsa, aut accusamus </li>
+                <li>Segundo item lista ordenada.</li>
+            </ol>
+            <h4>Lista desordenada</h4>
+            <ul>
+                <li>Primer item lista desordenada. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Id, eligendi? Reiciendis earum ipsa, aut accusamus </li>
+                <li>Segundo item lista desordenada.</li>
+            </Ul>
+        </div>
+       </section>
+        <h2 id="multimedia_html">5. Elementos multimedia</h2>
+        <div>
+            <img src="https://i.pinimg.com/550x/1f/45/e3/1f45e352c00776c547b2fc3441318d9b.jpg" alt="Perrito con exceso de belleza">
+            <video width="640" height="360" controls>
+                <source src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"> 
+            </video>            
+            <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls></audio>
+        </div>
+        <section>
+            <h2 id="tablas_html">6.Tablas</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Columna 1</th>
+                            <th>Columna 2</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>   
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                            
+                        </tr>
+                        <tr>   
+                            <td>Dato 3</td>
+                            <td>Dato 4</td>
+                              
+                        </tr>
+                    </tbody>
+                    <tfoot>
+    
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2 id="formulario_html">7. Formulario</h2>
+        <div>
+                <form>
+                <label>Nombre:</label>
+                <input type="text" placeholder="Ingrese su nombre">
+                <label>Email:</label>
+                <input type="email" placeholder="example@example.com">
+                <label>Mensaje:</label>
+                <textarea placeholder="Ingrese informacion mas detallada"></textarea>
+                <button>Enviar</button>
+            </form>
+        </div>
+    </footer>
+    </body>
+</html>

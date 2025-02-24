@@ -1,0 +1,17 @@
+.blue-text{
+  color: blue;
+}
+li{
+  cursor: pointer;
+}
+ /* Estilo para el campo de texto deshabilitado */
+ #campo-texto:disabled{
+  cursor: not-allowed;
+  opacity: 0.5; 
+  
+}
+
+/* Estilo para el campo de texto habilitado */
+#campo-texto {
+  cursor: text;
+}
